@@ -15,7 +15,7 @@ public class Main
         final File newFile = new File("usermap.bin");
         if (!file.exists())
         {
-            System.out.println("Where's the fucking usermap, genius?");
+            System.out.println("Usermap not found!");
             return;
         }
 
@@ -36,7 +36,7 @@ public class Main
         }
         catch (Exception ex)
         {
-            System.out.println("AW SHIT");
+            System.out.println("Failed to read old usermap");
             ex.printStackTrace();
         }
 
@@ -52,7 +52,7 @@ public class Main
         }
         catch (Exception ex)
         {
-            System.out.println("FUCK");
+            System.out.println("Failed to write old usermap");
             ex.printStackTrace();
         }
     }
